@@ -1,0 +1,15 @@
+--Ejecución de scripts: initdb, start
+
+--Inicia el terminal
+psql -d postgres
+
+--Una vez dentro, podemos ejecutar cualquier comando SQL
+
+--Crear BD
+CREATE DATABASE fiis_bd1;
+
+--Crear usuario
+CREATE USER usuario WITH ENCRYPTED PASSWORD 'password';
+
+--Dar privilegios sobre la BD al usuario creado.
+GRANT ALL PRIVILEGES ON DATABASE fiis_bd1 TO usuario;
