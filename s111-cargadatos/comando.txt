@@ -1,0 +1,5 @@
+En consola >>
+psql -d fiis_dbd211
+
+En psql:
+COPY TITANIC_RAW FROM 'D:/id/titanic.csv' DELIMITERS ',' CSV;
